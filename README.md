@@ -17,6 +17,7 @@ Changes introduced to make this theme compatible with the latest Hugo versions (
 * Replace *paginate =* with *pagination.pagerSize* in config.toml (fixes "*WARN  deprecated: site config key paginate was deprecated in Hugo v0.128.0 and will be removed in a future release. Use pagination.pagerSize instead.*")
 * Replace *.Summary | html* with *.Summary | plainify | htmlUnescape* in layouts/rss.xml (fixes XML/RSS feed rendering issues)
 * Replace instances of *.Site.Author.name* and *.Site.Author.email* with *.Site.Params.Author* and *.Site.Params.email* in layouts/rss.xml (fixes "Can't evaluate field Author in type page.Site")
+* Replace instances of *.Site.LanguageCode* with *.Site.Language.Locale* (fixes ".Site.LanguageCode was deprecated in Hugo v0.158.0")
 
 Natrium includes: taxonomies (categories, tags), static footer, new fonts (Roboto Mono, Font Awesome), local fonts, comments (Disqus), syntax highlighting, better support for code, img and RSS, pagination, multiple design optimizations, i18n, 404.html...
 
